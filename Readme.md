@@ -1,4 +1,4 @@
-# snippet-lite
+# segmentio-snippet-lite
 
   Render the analytics.js snippet using ES6 templates, without using handlebars
   of minification
