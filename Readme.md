@@ -1,8 +1,15 @@
-[![Circle CI](https://circleci.com/gh/segmentio/snippet.svg?style=svg)](https://circleci.com/gh/segmentio/snippet)
+# snippet-lite
 
-# snippet
+  Render the analytics.js snippet using ES6 templates, without using handlebars
+  of minification
 
-  Render the analytics.js snippet.
+## Why?
+
+  The original [segment.io snippet generator](https://github.com/segmentio/snippet)
+  is great, however, it was giving my webpack build chain heartburn. So,
+  this version was created.
+
+  It puts the burden of minification on your build chain.
 
 ## Example
 
@@ -32,7 +39,6 @@ var contents = snippet.max({
   * `apiKey`: the `apiKey` to load in the snippet
   * `page`: the options to pass to `analytics.page`. if `page` is `false`, then the `page()` call will be omitted
 
+## Requirements
 
-### snippet.min(options)
-
-  Returns the minified version of the snippet.
+  * Babel ES6
